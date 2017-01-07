@@ -1,0 +1,20 @@
+{
+  "description": {
+    "en": "Tumblr Content Export",
+    "ru": "Экспорт конетнта в Tumblr",
+    "uk": "Експорт контенту до Tumblr"
+  },
+  "url": "https://github.com/pytsite/plugin-content_export_tumblr",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": [
+      "content_export",
+      "tumblr"
+    ]
+  }
+}
