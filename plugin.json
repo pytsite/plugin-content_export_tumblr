@@ -1,4 +1,6 @@
 {
+  "name": "plugins.content_export_tumblr",
+  "version": "0.1.1",
   "description": {
     "en": "Tumblr Content Export",
     "ru": "Экспорт конетнта в Tumblr",
