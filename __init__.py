@@ -1,4 +1,4 @@
-"""
+"""PytSite Tumblr Content Export Driver
 """
 
 __author__ = 'Alexander Shepetko'
@@ -11,7 +11,7 @@ def _init():
     from plugins import content_export
     from . import _driver
 
-    lang.register_package(__name__, alias='content_export_tumblr')
+    lang.register_package(__name__)
     content_export.register_driver(_driver.Driver())
 
 

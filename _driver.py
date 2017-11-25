@@ -1,9 +1,8 @@
-"""PytSite Tumblr Content Export Driver.
+"""PytSite Tumblr Content Export Driver
 """
 from frozendict import frozendict as _frozendict
-from pytsite import widget as _widget, logger as _logger, router as _router
-from plugins import content_export as _content_export
-from plugins import content as _content, tumblr as _tumblr
+from pytsite import logger as _logger, router as _router
+from plugins import widget as _widget, content_export as _content_export, content as _content, tumblr as _tumblr
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
