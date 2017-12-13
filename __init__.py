@@ -6,13 +6,10 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def _init():
+def plugin_load():
     from pytsite import lang
     from plugins import content_export
     from . import _driver
 
     lang.register_package(__name__)
     content_export.register_driver(_driver.Driver())
-
-
-_init()
