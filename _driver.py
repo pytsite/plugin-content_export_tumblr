@@ -1,17 +1,18 @@
 """PytSite Tumblr Content Export Driver
 """
-from frozendict import frozendict as _frozendict
-from pytsite import logger as _logger, router as _router
-from plugins import widget as _widget, content_export as _content_export, content as _content, tumblr as _tumblr
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from frozendict import frozendict as _frozendict
+from pytsite import logger as _logger, router as _router
+from plugins import widget as _widget, content_export as _content_export, content as _content, tumblr as _tumblr
 
 
 class Driver(_content_export.AbstractDriver):
     """Content Export Driver.
     """
+
     def get_name(self) -> str:
         """Get system name of the driver.
         """
