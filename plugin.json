@@ -1,6 +1,6 @@
 {
   "name": "content_export_tumblr",
-  "version": "1.1.1",
+  "version": "1.2",
   "description": {
     "en": "Tumblr Content Export",
     "ru": "Экспорт конетнта в Tumblr",
@@ -13,10 +13,9 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "packages": [],
     "plugins": [
       "content",
-      "content_export",
+      "content_export>=2.3",
       "tumblr",
       "widget"
     ]

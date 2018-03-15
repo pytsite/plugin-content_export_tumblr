@@ -28,7 +28,7 @@ class Driver(_content_export.AbstractDriver):
         """
         return driver_options.get('user_blog')
 
-    def get_settings_widget(self, driver_opts: _frozendict) -> _widget.Abstract:
+    def get_settings_widget(self, driver_opts: _frozendict, form_url: str) -> _widget.Abstract:
         """Add widgets to the settings form of the driver.
         """
         return _tumblr.widget.Auth(
@@ -37,7 +37,7 @@ class Driver(_content_export.AbstractDriver):
             oauth_token_secret=driver_opts.get('oauth_token_secret'),
             screen_name=driver_opts.get('screen_name'),
             user_blog=driver_opts.get('user_blog'),
-            callback_uri=_router.request().inp.get('__form_data_location'),
+            callback_uri=form_url,
         )
 
     def export(self, entity: _content.model.Content, exporter=_content_export.model.ContentExport):
