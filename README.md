@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2.1 (2018-07-29)
+
+Unused import removed.
+
+
 ### 1.2 (2018-03-15)
 
 Support for `content_export-2.3`

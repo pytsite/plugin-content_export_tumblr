@@ -5,7 +5,7 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 from frozendict import frozendict as _frozendict
-from pytsite import logger as _logger, router as _router
+from pytsite import logger as _logger
 from plugins import widget as _widget, content_export as _content_export, content as _content, tumblr as _tumblr
 
 
