@@ -1,6 +1,6 @@
 {
   "name": "content_export_tumblr",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": {
     "en": "Tumblr Content Export",
     "ru": "Экспорт конетнта в Tumblr",
@@ -8,12 +8,13 @@
   },
   "url": "https://github.com/pytsite/plugin-content_export_tumblr",
   "author": {
-    "name": "Alexander Shepetko",
+    "name": "Oleksandr Shepetko",
     "email": "a@shepetko.com",
     "url": "https://shepetko.com"
   },
   "requires": {
     "plugins": [
+      "auth>=3.6",
       "content",
       "content_export>=2.3",
       "tumblr",

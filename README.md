@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 1.2.2 (2018-08-23)
+
+User's `full_name` usage replaced with `first_last_name`.
+
+
 ### 1.2.1 (2018-07-29)
 
 Unused import removed.

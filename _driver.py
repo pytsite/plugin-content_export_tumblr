@@ -1,6 +1,6 @@
 """PytSite Tumblr Content Export Driver
 """
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
@@ -58,7 +58,7 @@ class Driver(_content_export.AbstractDriver):
                 tags += tuple(t.title for t in entity.f_get('tags'))
 
             thumb_url = entity.images[0].get_url(width=640) if entity.images else None
-            author = entity.author.full_name
+            author = entity.author.first_last_name
             description = entity.f_get('description') if entity.has_field('description') else ''
             s.blog_post_link(opts['user_blog'], entity.url, entity.title, description, thumb_url,
                              author=author, tags=','.join(tags))
